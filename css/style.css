@@ -1,0 +1,269 @@
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* General
+================ */
+html {
+   font-family: 'Open Sans', Arial, serif;;
+   font-weight: 400;
+   /*font-family: 'Source Sans Pro', sans-serif; */
+   font-size: 100%; 
+   -webkit-text-size-adjust: 100%; 
+   -ms-text-size-adjust: 100%; 
+   -webkit-font-smoothing: antialiased; 
+   text-rendering: optimizeLegibility; 
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {font-size: 14px; margin:0; padding:0;}
+::-moz-selection {background: #e65454; color: #ffffff; text-shadow: none;}
+::selection {background: #e65454; color: #ffffff; text-shadow: none;}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; /*overflow-y: scroll;*/ -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body {margin: 0; font-size: 18px; line-height: 130%; font-size: 16px; color: #3e433e; background: #fff;}
+body, button, input, select, textarea {font-family: 'Source Sans Pro', sans-serif; color: #3e433e; }
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #E34022; color: #fff; text-shadow: none; }
+::selection { background: #E34022; color: #fff; text-shadow: none; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a {color: #e65454; border-bottom: 2px dashed white;/* Firefox */
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+/*a:visited { color: #d84242; }*/
+a:hover { color: #e65454;  border-bottom-color: white; background: rgba(255,255,255,.10);}
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+h1,h2,h3,h4,h5, h6 {color: #fff;letter-spacing:-0.06em; }
+.center{display: block; margin: 0px auto;}
+br {line-height: 10px;}
+
+/* Type
+================ */
+h1, h2, h3, h4, h5, h6 p {font-family: 'Source Sans Pro', sans-serif;}
+.center { text-align: center; }
+h1 {margin: 10px 0 0; font-size: 24px; font-size: 300; color: #444444;}
+h1 strong {font-weight: 600;}
+h2 {color: #ededed; font-size: 42px; line-height: 140%; font-weight: 400;}
+h2 a {color: #fff; border-bottom: 1px dashed #ccc; white-space: nowrap;}
+h2 a:hover {background: rgba(255,255,255,.2); }
+h3 {margin: 0 0 10px; color: #565656; font-size: 23px; font-weight: 600; font-family: 'Source Sans Pro', sans-serif;}
+a {text-decoration: none;}
+h4 { font-weight:normal; font-size:15px; letter-spacing:normal; font-family: 'Source Sans Pro', sans-serif; margin:0 auto; padding: 0 0 5px 0; text-align:left; color:#333030; text-transform:uppercase; line-height:24px; }
+h5 { font-weight:600; font-size:30px; letter-spacing:normal; font-family: 'Source Sans Pro', sans-serif; margin:0 auto; padding: 0 0 5px 0; text-align:center; color:#333030; text-transform:uppercase; line-height:30px; }
+.seperator { display: block; margin: 5px auto 50px auto; width: 35px; background: #EAEAEA; height: 4px; }
+.center {text-align: center;}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; list-style: none }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+/*-----------------------------------------------------------------------------------*/
+/*  BUTTON STYLES
+/*-----------------------------------------------------------------------------------*/
+.button.small {background: #ccc;border-radius: 4px;color: #fff;display: inline-block;font-size: 14px;font-weight: bold;margin-top: 10px;padding: 8px 18px;-webkit-transition: background .4s linear;-moz-transition: background .4s linear;-o-transition: background .4s linear;-ms-transition: background .4s linear;transition: background .4s linear;text-decoration: none;}
+.button.small:hover {background: #e65454; color: #ffffff;text-decoration: none;}
+.button-caption{padding: 20px 0;}
+.button.large {border-radius:4px;display: inline-block;font-size: 22px;font-weight: bold;padding: 8px 60px;margin-bottom: 2em;margin-top: 2em; -webkit-transition: background .4s linear;-moz-transition: background .4s linear;-o-transition: background .4s linear;-ms-transition: background .4s linear;transition: background .4s linear;text-decoration: none;}
+.button.large:hover {color: #ffffff;text-decoration: none;}
+/*.button.small {font-size: 16px;}*/
+/*.button.large {font-size: 28px;}*/
+
+.button-red {background: #e65454; color: #fff;}
+.button-red:hover {background: #c44747;}
+.button-green2 {background: #5DA322;}
+.button-green2:hover {background: #3b7808;}
+.button-blue2 {background: #4593e3;}
+.button-blue2:hover {background: #2073c8;}
+.button-pink {background: #de7192;}
+.button-pink:hover {background: #c14b69;}
+.button-grey {background: #bbbbbb;}
+.button-grey:hover {background: #727272;}
+.button-white {background: #fff; color: #333333}
+.button-white:hover {background: #333333;}
+.button-purple {background: #fff; color:#8c68a6;}
+.button-purple:hover {background: #333; color:#fff;}
+.button-blue {background: #fff; color:#0087c9;}
+.button-blue:hover {background: #333; color:#fff;}
+.button-green {background: #fff; color:#97C157;}
+.button-green:hover {background: #333; color:#fff;}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Sections 
+/*-----------------------------------------------------------------------------------*/
+section#banner {
+   color: #fff; 
+   background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.60)), url(http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52a077d68d6e9_1.JPG) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: auto; width: 100%; float: left; zoom: 1; position: relative;height: auto;/* border-bottom: 1px solid #E1E1E1*/;
+   height: 700px;
+}
+section#about {text-align: center;}
+
+.avatar {
+   padding-top: 2em;
+   padding-bottom: 0.5em;
+   margin: auto;
+}
+.hero-unit {
+padding: 0;
+margin: 0;
+background-color: transparent;
+}
+.hero-unit {
+  padding: 60px;
+  margin-top: 4em;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: inherit;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+
+.hero-unit li {
+  line-height: 30px;
+}
+.info {
+   width: 60%;
+   font-weight: 400;
+   font-size: 32px;
+}
+
+.info a:hover {color:#fff;}
+
+#avatar {
+   background-image: url(images/avatar.png);}
+.avatar img {
+position: absolute;
+top: 0;
+left: 0;
+/*width: 100%;*/
+line-height: 0;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+.about-links {padding-top: 1em;font-size: 16px;}
+.about-links a{
+   opacity: 0.8;
+   transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+ }
+.about-links a:hover {opacity: 1;}
+
+#footer {
+padding: 20px 0;
+padding-top: 30px;
+text-align: center;
+/*border-top: 1px solid #2d2d2d;*/
+/*color: #8f8f8f;*/
+position: fixed;
+bottom: 0px;
+left: 40%;
+}
+.wrap {
+max-width: 1120px;
+margin: 0 auto;
+}
+#footer .copyright, #footer .phone, #footer .address {
+float: none;
+margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  MAKE IT RESPONSIVE!!!! 
+/*-----------------------------------------------------------------------------------*/
+
+@media (max-width: 979px) {
+   .info {width: 70%;}
+}
+
+
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  body > section,
+  header,
+  footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+   .info {width: 90%;font-size: 24px;}
+}
+
