@@ -22,8 +22,8 @@ html {
 }
 
 body {font-size: 14px; margin:0; padding:0;}
-::-moz-selection {background: #e65454; color: #ffffff; text-shadow: none;}
-::selection {background: #e65454; color: #ffffff; text-shadow: none;}
+::-moz-selection {background: #e25454; color: #ffffff; text-shadow: none;}
+::selection {background: #e25454; color: #ffffff; text-shadow: none;}
 
 /* =============================================================================
    Base
@@ -52,14 +52,14 @@ body, button, input, select, textarea {font-family: 'Source Sans Pro', sans-seri
    Links
    ========================================================================== */
 
-a {color: #e65454; border-bottom: 2px dashed white;/* Firefox */
+a {color: #e25454; border-bottom: 2px dashed white;/* Firefox */
     -moz-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
 /*a:visited { color: #d84242; }*/
-a:hover { color: #e65454;  border-bottom-color: white; background: rgba(255,255,255,.10);}
+a:hover { color: #e25454;  border-bottom-color: white; background: rgba(255,255,255,.10);}
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -121,14 +121,14 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
 /*  BUTTON STYLES
 /*-----------------------------------------------------------------------------------*/
 .button.small {background: #ccc;border-radius: 4px;color: #fff;display: inline-block;font-size: 14px;font-weight: bold;margin-top: 10px;padding: 8px 18px;-webkit-transition: background .4s linear;-moz-transition: background .4s linear;-o-transition: background .4s linear;-ms-transition: background .4s linear;transition: background .4s linear;text-decoration: none;}
-.button.small:hover {background: #e65454; color: #ffffff;text-decoration: none;}
+.button.small:hover {background: #e25454; color: #ffffff;text-decoration: none;}
 .button-caption{padding: 20px 0;}
 .button.large {border-radius:4px;display: inline-block;font-size: 22px;font-weight: bold;padding: 8px 60px;margin-bottom: 2em;margin-top: 2em; -webkit-transition: background .4s linear;-moz-transition: background .4s linear;-o-transition: background .4s linear;-ms-transition: background .4s linear;transition: background .4s linear;text-decoration: none;}
 .button.large:hover {color: #ffffff;text-decoration: none;}
 /*.button.small {font-size: 16px;}*/
 /*.button.large {font-size: 28px;}*/
 
-.button-red {background: #e65454; color: #fff;}
+.button-red {background: #e25454; color: #fff;}
 .button-red:hover {background: #c44747;}
 .button-green2 {background: #5DA322;}
 .button-green2:hover {background: #3b7808;}
