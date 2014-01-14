@@ -233,7 +233,7 @@ overflow: hidden;
 .icons a:hover{
   color: #fff !important;
   border-bottom-color: white; 
-  background: #3498db;
+  background: none !important;
   border-radius: 4px;
   height:60px;
 }
@@ -242,10 +242,8 @@ padding: 20px 0;
 padding-top: 30px;
 text-align: center;
 /*border-top: 1px solid #2d2d2d;*/
-/*color: #8f8f8f;*/
 position: relative;
 bottom: 0px;
-/*left: 40%;*/
 opacity: 0.5;
 }
 .wrap {
@@ -272,7 +270,7 @@ margin: 0;
     padding-right: 0;
     padding-left: 0;
   }
-  .info {margin-top: 2em !important;}
+  /*.info {margin-top: 2em !important;}*/
   .info h2{font-size: 60px;}
   body > section,
   header,
