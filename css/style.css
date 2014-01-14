@@ -152,8 +152,8 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
 /*-----------------------------------------------------------------------------------*/
 section#banner {
    color: #fff; 
-   background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.60)), url(http://farm6.staticflickr.com/5539/11781215603_b4ef76173d_k.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: auto; width: 100%; float: left; zoom: 1; position: relative;height: auto;/* border-bottom: 1px solid #E1E1E1*/;
-   /*height: 700px;*/
+   background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.60)), url(http://farm6.staticflickr.com/5539/11781215603_b4ef76173d_k.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; float: left; zoom: 1; position: relative;/* border-bottom: 1px solid #E1E1E1*/;
+   height: 720px;
 }
 section#about {text-align: center;}
 
@@ -195,7 +195,6 @@ background-color: transparent;
    width: 80%;
    font-weight: 400;
    font-size: 32px;
-   margin-top: 6em;
 }
 .info h2 {
   font-size: 62px;
@@ -261,7 +260,7 @@ margin: 0;
 /*-----------------------------------------------------------------------------------*/
 
 @media (max-width: 979px) {
-   .info {width: 90% !important;}
+   .info {width: 90% !important; margin-top: 6em;}
 }
 
 
@@ -270,7 +269,7 @@ margin: 0;
     padding-right: 0;
     padding-left: 0;
   }
-  /*.info {margin-top: 2em !important;}*/
+  .info {margin-top: 2em;}
   .info h2{font-size: 60px;}
   body > section,
   header,
