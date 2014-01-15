@@ -96,7 +96,6 @@ br {line-height: 10px;}
 /* Type
 ================ */
 h1, h2, h3, h4, h5, h6 p {font-family: 'Source Sans Pro', sans-serif;}
-.center { text-align: center; }
 h1 {margin: 10px 0 0; font-size: 24px; font-size: 300; color: #444444;}
 h1 strong {font-weight: 600;}
 h2 {color: #ededed; font-size: 42px; line-height: 140%; font-weight: 400;}
@@ -108,7 +107,7 @@ h4 { font-weight:normal; font-size:15px; letter-spacing:normal; font-family: 'So
 h5 { font-weight:600; font-size:30px; letter-spacing:normal; font-family: 'Source Sans Pro', sans-serif; margin:0 auto; padding: 0 0 5px 0; text-align:center; color:#333030; text-transform:uppercase; line-height:30px; }
 .seperator { display: block; margin: 5px auto 50px auto; width: 35px; background: #EAEAEA; height: 4px; }
 .center {text-align: center;}
-
+.center-height {position: relative;top: 50%;transform: translateY(-50%);}
 /* =============================================================================
    Lists
    ========================================================================== */
@@ -155,6 +154,9 @@ section#banner {
    background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.60)), url(http://farm6.staticflickr.com/5539/11781215603_b4ef76173d_k.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; float: left; zoom: 1; position: relative;/* border-bottom: 1px solid #E1E1E1*/;
    height: 720px;
 }
+
+.fadein { display: none; }
+
 section#about {text-align: center;}
 
 .avatar {
@@ -192,7 +194,8 @@ background-color: transparent;
   line-height: 30px;
 }
 .info {
-   width: 80%;
+   margin-top: 6em;
+   width: 60%;
    font-weight: 400;
    font-size: 32px;
 }
@@ -237,6 +240,7 @@ overflow: hidden;
   height:60px;
 }
 #footer {
+margin-top: 2em;
 padding: 20px 0;
 padding-top: 30px;
 text-align: center;
@@ -260,7 +264,7 @@ margin: 0;
 /*-----------------------------------------------------------------------------------*/
 
 @media (max-width: 979px) {
-   .info {width: 90% !important; margin-top: 6em;}
+   .info {width: 100% !important; margin-top: 6em;}
 }
 
 
@@ -269,7 +273,7 @@ margin: 0;
     padding-right: 0;
     padding-left: 0;
   }
-  .info {margin-top: 2em;}
+  .info {width: 100%; margin-top: 6em;}
   .info h2{font-size: 60px;}
   body > section,
   header,
@@ -281,7 +285,7 @@ margin: 0;
 
 
 @media (max-width: 480px) {
-   .info {width: 90%;}
+   .info {width: 100%; margin-top: 4em;}
    .info h2{font-size: 42px;line-height: 130% !important;}
    #footer {left:0;}
 }
