@@ -151,7 +151,7 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
 /*-----------------------------------------------------------------------------------*/
 section#banner {
    color: #fff; 
-   background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.60)), url(http://farm6.staticflickr.com/5539/11781215603_b4ef76173d_k.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; float: left; zoom: 1; position: relative;/* border-bottom: 1px solid #E1E1E1*/;
+   background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.60)), url(../images/background.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; float: left; zoom: 1; position: relative;/* border-bottom: 1px solid #E1E1E1*/;
    /*height: 720px;*/
    height:auto !important; /* real browsers */
    height:100%; /* IE6: treaded as min-height*/
