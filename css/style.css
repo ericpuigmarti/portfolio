@@ -19,8 +19,9 @@ html {
    -webkit-font-smoothing: antialiased; 
    text-rendering: optimizeLegibility; 
    -webkit-tap-highlight-color: rgba(0,0,0,0);
+   text-align: center;
 }
-html body {height:100%; /* needed for container min-height */}
+html body {height: 100vh; /* needed for container min-height */}
 body {font-size: 14px; margin:0; padding:0;}
 ::-moz-selection {background: #e65454; color: #ffffff; text-shadow: none;}
 ::selection {background: #e65454; color: #ffffff; text-shadow: none;}
@@ -36,7 +37,7 @@ body {font-size: 14px; margin:0; padding:0;}
  */
 
 html { font-size: 100%; /*overflow-y: scroll;*/ -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body {margin: 0; font-size: 18px; line-height: 130%; font-size: 16px; color: #3e433e; background: #fff;}
+body {margin: 0; font-size: 18px; line-height: 130%; font-size: 16px; color: #3e433e; background: #121c27;}
 body, button, input, select, textarea {font-family: 'Source Sans Pro', sans-serif; color: #3e433e; }
 
 /* 
@@ -45,21 +46,21 @@ body, button, input, select, textarea {font-family: 'Source Sans Pro', sans-seri
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #E34022; color: #fff; text-shadow: none; }
-::selection { background: #E34022; color: #fff; text-shadow: none; }
+::-moz-selection { background: #7b7564; color: #fff; text-shadow: none; }
+::selection { background: #7b7564; color: #fff; text-shadow: none; }
 
 /* =============================================================================
    Links
    ========================================================================== */
 
-a {color: #e65454; border-bottom: 2px dashed white;/* Firefox */
+a {color: #c4bb9f; border-bottom: 2px dashed white;/* Firefox */
     -moz-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
 /*a:visited { color: #d84242; }*/
-a:hover { color: #e65454;  border-bottom-color: white; background: rgba(255,255,255,.10);}
+a:hover { color: #3c3c3c;  /*border-bottom-color: white; background: rgba(255,255,255,.10);*/}
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -151,11 +152,19 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
 /*-----------------------------------------------------------------------------------*/
 section#banner {
    color: #fff; 
-   background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.60)), url(../images/background.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; float: left; zoom: 1; position: relative;/* border-bottom: 1px solid #E1E1E1*/;
-   /*height: 720px;*/
-   height:auto !important; /* real browsers */
-   height:100%; /* IE6: treaded as min-height*/
-   min-height:100%; /* real browsers */
+   background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.60)), url(../images/background.jpg) no-repeat center center fixed; 
+   -webkit-background-size: cover; 
+   -moz-background-size: cover; 
+   -o-background-size: cover; 
+   background-size: cover; 
+   height: 100vh;
+   /*height:auto !important; /* real browsers */
+   /*height:100%;  IE6: treaded as min-height*/
+   min-height:450px; /* real browsers */
+   width: 100%; 
+   float: left; 
+   zoom: 1; 
+   position: relative;/* border-bottom: 1px solid #E1E1E1*/;
 }
 
 .fadein { display: none; }
@@ -173,9 +182,9 @@ margin: 0;
 background-color: transparent;
 }
 .hero-unit {
-  padding: 60px;
+  /*padding: 60px;
   margin-top: 4em;
-  margin-bottom: 30px;
+  margin-bottom: 30px;*/
   font-size: 18px;
   font-weight: 400;
   line-height: 130%;
@@ -232,25 +241,22 @@ overflow: hidden;
 .about-links a:hover {opacity: 1;}
 
 .icons a{
-  color: #3498db !important;
+  color: #C4BB9F !important;
 }
 
 .icons a:hover{
-  color: #fff !important;
+  color: #3c3c3c !important;
   border-bottom-color: white; 
   background: none !important;
   border-radius: 4px;
   height:60px;
 }
 #footer {
-margin-top: 2em;
+margin-top: 12em;
 padding: 20px 0;
-padding-top: 30px;
 text-align: center;
-/*border-top: 1px solid #2d2d2d;*/
 position: relative;
 bottom: 0px;
-opacity: 0.5;
 }
 .wrap {
 max-width: 1120px;
@@ -260,6 +266,7 @@ margin: 0 auto;
 #footer .copyright, #footer .phone, #footer .address {
 float: none;
 margin: 0;
+opacity: 0.5;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -291,5 +298,39 @@ margin: 0;
    .info {width: 100%; margin-top: 0em;}
    .info h2{font-size: 42px;line-height: 130% !important;}
    #footer {left:0;}
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  FIX!!!! 
+/*-----------------------------------------------------------------------------------*/
+.container{
+  width:960px;
+  margin:0 auto;
+  margin-top: 80px;
+}
+.container h1 {font-size:64px;color:#C4BB9F;margin:0 0 30px 0}}
+.desc {font-size: 27px !important;line-height: 130%;}
+.highlight {color: #C4BB9F;}
+.highlight:hover {color: #3c3c3c;    
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;}
+
+@media only screen and (min-width: 701px) and (max-width: 939px){
+  .container{
+    width:700px
+  }
+}
+@media only screen and (max-width: 700px){
+  .container{
+    width:500px
+    }
+}
+@media only screen and (max-width: 500px){
+  .container{
+    width:300px
+  }
 }
 
