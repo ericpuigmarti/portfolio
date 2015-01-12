@@ -1,4 +1,4 @@
 empty
 =====
 
-stockphoto landing page
+big photo homepage
